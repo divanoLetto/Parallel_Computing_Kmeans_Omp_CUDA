@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="kmeans_cuda_omp_project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cuda_version">
+				<Option output="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/cuda_version" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/local/include/libomp"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/python2.7"/>
+					<Add directory="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/matplotlib-cpp-master"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 cuda_version"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cuda_version/fast">
+				<Option output="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/cuda_version" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/local/include/libomp"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/python2.7"/>
+					<Add directory="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/matplotlib-cpp-master"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 cuda_version/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/Record.h">
+			<Option target="cuda_version"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/cuda_version.dir/cuda_version_generated_kmeans_adv.cu.o">
+			<Option target="cuda_version"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/cuda_version.dir/cuda_version_generated_kmeans_adv_slow.cu.o">
+			<Option target="cuda_version"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/data_generator.h">
+			<Option target="cuda_version"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/kmeans_adv.cu">
+			<Option target="cuda_version"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/kmeans_adv.h">
+			<Option target="cuda_version"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/kmeans_adv_slow.cu">
+			<Option target="cuda_version"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/kmeans_omp.h">
+			<Option target="cuda_version"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/kmeans_sequential.h">
+			<Option target="cuda_version"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/main_adv.cpp">
+			<Option target="cuda_version"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/plot_adv.h">
+			<Option target="cuda_version"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

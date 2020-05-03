@@ -1,0 +1,63 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a1f79/fast && /usr/bin/make -f CMakeFiles/cmTC_a1f79.dir/build.make CMakeFiles/cmTC_a1f79.dir/build
+make[1]: Entering directory '/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a1f79.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a1f79.dir/src.cxx.o -c /home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a1f79
+/home/lorenzo/clion-2019.3.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1f79.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_a1f79.dir/src.cxx.o  -o cmTC_a1f79 
+CMakeFiles/cmTC_a1f79.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a1f79.dir/build.make:86: recipe for target 'cmTC_a1f79' failed
+make[1]: *** [cmTC_a1f79] Error 1
+make[1]: Leaving directory '/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_a1f79/fast' failed
+make: *** [cmTC_a1f79/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f253c/fast && /usr/bin/make -f CMakeFiles/cmTC_f253c.dir/build.make CMakeFiles/cmTC_f253c.dir/build
+make[1]: Entering directory '/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f253c.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f253c.dir/CheckFunctionExists.cxx.o -c /home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_f253c
+/home/lorenzo/clion-2019.3.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f253c.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_f253c.dir/CheckFunctionExists.cxx.o  -o cmTC_f253c -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f253c.dir/build.make:86: recipe for target 'cmTC_f253c' failed
+make[1]: *** [cmTC_f253c] Error 1
+make[1]: Leaving directory '/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_f253c/fast' failed
+make: *** [cmTC_f253c/fast] Error 2
+
+
+

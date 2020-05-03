@@ -1,0 +1,3 @@
+/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/cuda_version.dir
+/home/lorenzo/CLionProjects/kmeans_cuda_omp_project/cmake-build-debug/CMakeFiles/edit_cache.dir
