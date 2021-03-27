@@ -6,3 +6,5 @@ In particular, in addition to the sequential version, we develope other implemen
 
 ## Results
 The Kmeans clustering algorithm's performance has been improved by **multi-processors parallelism** obteined through the **Omp** framework, which allowed to obtain a speedup close to the number of processors avaible. Subsequently, through the parallelism of the **GPUs**, we develope a version of the algorithm by the parallel computing platform **CUDA**, that allowed us to obtain enormously higher speedups, in the order of hundreds, compared to both the sequential and the Omp parallel version. Finally to achive even higher speedup results we develope a version of the algorithm that use the **shared memory** in CUDA and compare it with the previous versions. 
+
+<img align="center" src="https://github.com/divanoLetto/Parallel_Computing_Kmeans_Omp_CUDA/blob/master/Images/presentazione.png" width="100%" height="100%">
